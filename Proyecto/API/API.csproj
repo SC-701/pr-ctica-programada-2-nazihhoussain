@@ -7,11 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.38" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Abstracciones\Abstracciones.csproj" />
+		<ProjectReference Include="..\BC\BC.csproj" />
+		<ProjectReference Include="..\BW\BW.csproj" />
+		<ProjectReference Include="..\DA\DA.csproj" />
+		<ProjectReference Include="..\SG\SG.csproj" />
+	</ItemGroup>
 
 </Project>
